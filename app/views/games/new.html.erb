@@ -1,0 +1,20 @@
+<div class="container">
+<h1>New Game</h1>
+</div>
+
+<div class="container">
+  <% @random.each do |letter| %>
+    <h2><%= letter %></h2>
+  <% end %>
+</div>
+
+<div class="container">
+  <form action="score" method='POST'>
+    <input class="user-input" type="text" name="answer">
+    <input class="button" type="submit" value=">play">
+    <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+    <%= hidden_field_tag :random, @random %>
+  </form>
+
+</div>
+

@@ -1,0 +1,39 @@
+// Place all the styles related to the games controller here.
+// They will automatically be included in application.css.
+
+
+h2 {
+  display: inline-block;
+  padding: 10px;
+  background-color: #0188DD;
+  margin: 10px;
+  color: #FFF;
+  box-shadow: 2px 2px 3px black;
+  width: 20px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.container {
+  width: 600px;
+  display: flex;
+  margin: auto
+}
+
+.button {
+  color: #FFF;
+  background-color: #0188DD;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 8px 24px;
+}
+
+form {
+  width: 600px;
+  display: flex;
+}
+input.user-input {
+  flex-grow: 1;
+  margin-right: 5px;
+}
